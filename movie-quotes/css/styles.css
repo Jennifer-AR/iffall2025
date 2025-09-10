@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  color: #111;
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff, rgba(163, 0, 0, 0.898));
+  font-family: "IM Fell Great Primer", serif; 
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  text-align: center;
+  gap: 0.5rem;
+  padding: 2rem 1rem 1rem;
+}
+
+.logo {
+  width: clamp(120px, 22vw, 240px); 
+  height: auto;
+  display: block;
+}
+
+
+h1 {
+  margin: 0.75rem 0 0;
+  line-height: 1;
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-size: 70px;
+  text-align: center;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 0.25rem 0;
+  padding: 0 1rem 2rem;
+}
+
+.character-name {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem 0 0.25rem;
+  font-size: 1.25rem;
+}
+
+.dialogue {
+  max-width: 60ch;         
+  width: min(90vw, 600px); 
+  margin: 0 0 0.75rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.scene-divider {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+
