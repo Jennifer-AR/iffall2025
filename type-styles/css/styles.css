@@ -1,0 +1,101 @@
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #111;
+  font-family: "Cormorant", serif;
+  font-size: 18pt;   
+  line-height: 1.5;
+}
+
+
+.cormorant-light {
+  font-family: "Cormorant", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-normal {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-italic {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cormorant-medium {
+  font-family: "Cormorant", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-semibold {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-bold {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.banner {
+  position: fixed;
+  top: 0; left: 0; right: 0; 
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  text-align: center;
+  padding: 32px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.banner h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 80px;  
+}
+.banner-subhead {
+  margin: 2px 0 0;
+  font-size: 20px;
+  color: #666;
+}
+
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+  padding-top: 200px;
+  text-align: left;
+}
+
+
+.group {
+  padding: 24px 0 16px;
+  border-top: 1px solid #e5e7eb;
+}
+.group:first-child {
+  border-top: 0;
+}
+.group h2 {
+  margin: 16px 0 20px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+
+.label {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #666;
+}
+.sample {
+  margin: 0 0 18px;
+}
