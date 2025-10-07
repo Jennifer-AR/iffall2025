@@ -1,0 +1,139 @@
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    color: rgb(255, 0, 0);
+}
+
+header {
+    text-align: center;
+    padding-top: 166px;
+    padding-bottom: 188px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5f5507a237cea057c5f57741/1663244872945-9ZWP2WX5ZI1DQ55FG3DD/Ojeikere+4.jpeg);
+    background-size: cover;
+    width: 100%;
+    min-width: 960px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 80px;
+    line-height: 1;
+}
+
+h2 {
+    margin: 0;
+    line-height: 1;
+    margin-top: 16px;
+    font-size: 30px;
+}
+
+.intro-block {
+    background-color: rgb(162, 162, 162);
+    padding: 48px 0 58px 0;
+    display: block;
+    width: 100%;
+    min-width: 960px;
+}
+
+.content {
+    width: 960px;
+    margin: auto;
+    gap: 2px;
+}
+
+.intro-block p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: -2px;
+}
+
+#salon_img {
+    width: 400px;
+    height: 300px;
+    float: right;
+    border: rgb(255, 42, 0) solid 1.5px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+section h1 {
+    text-align: center; 
+    font-size: 40px;
+    margin-bottom: 38px;
+}
+
+
+.gallery-wrap {
+    background-color: rgb(0, 0, 0);
+    padding: 48px 0 58px 0;
+    width: 100%;
+    min-width: 960px;
+}
+
+.gallery-wrap img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-bottom: 24px;
+}
+
+ol {
+    width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+}
+
+ol li {
+    width: 100%;
+    list-style: none;
+    
+}
+
+.caption-title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 212px;
+    margin-bottom: 7px;
+}
+
+.caption-body {
+    padding-right: 24px;
+    font-size: 18px;
+    padding-left: 212px;
+    line-height: 1.4;
+}
+
+.closing-text {
+    background-color: rgb(255, 255, 255);
+    padding: 48px 0 74px 0;
+    width: 100%;
+    min-width: 960px;
+    text-align: center;
+}
+
+.container{
+    width: 720px;
+    margin: auto;
+}
+
+.closing-text p {
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: rgb(38, 38, 38);
+    min-width: 960px;
+    width: 100%;
+    padding: 40px 0 40px 0;
+}
+
+footer p {
+    width: 960px;
+    margin: auto;
+    font-size: 18px;
+}
