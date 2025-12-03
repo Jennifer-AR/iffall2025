@@ -439,7 +439,6 @@ html {
   gap: 80px;
 }
 
-/* —— MATERIAL CARD REBUILT —— */
 /* —— MATERIALS GRID —— */
 
 .material {
@@ -450,7 +449,6 @@ html {
   align-items: center;
 }
 
-/* IMAGE — only this gets the shadow + hover effects */
 .material img {
   width: 100%;
   height: 220px;
@@ -458,7 +456,6 @@ html {
   border-radius: 8px;
 }
 
-/* TEXT — normal, flat, NO box shadow */
 .material-info {
   text-align: center;
   margin-top: 16px;
@@ -471,25 +468,21 @@ html {
   color: #a0442e;
 }
 
-/* lighter description */
 .material-info p {
   font-size: 15px;
   line-height: 1.5;
-  color: rgba(27, 27, 27, 0.6); /* <- lighter for non-hover */
+  color: rgba(27, 27, 27, 0.6);
   transition: color 0.3s ease;
 }
 
-/* —— HOVER ONLY AFFECTS IMAGE —— */
 .material:hover img {
   transform: translateY(-6px) scale(1.03);
   filter: brightness(1.05);
 }
 
-/* darken description on hover (optional, looks clean) */
 .material:hover .material-info p {
   color: rgba(27, 27, 27, 0.85);
 }
-
 
 /* FOLDING */
 .folding-styles {
@@ -648,9 +641,8 @@ html {
 
 @media (min-width: 901px) {
 
-  /* MATERIALS — preview text always visible */
   .material-info {
-    opacity: 0.6; /* visible but subtle */
+    opacity: 0.6; 
     background-color: rgba(239, 229, 221, 0.85);
     transition: opacity 0.3s ease, background-color 0.3s ease;
   }
@@ -660,8 +652,6 @@ html {
     background-color: rgba(239, 229, 221, 1);
   }
 
-
-  /* FOLDING — preview text always visible */
   .folding-info {
     opacity: 0.6;
     transform: translateY(0);
@@ -695,14 +685,13 @@ html {
     top: 76px;
   }
 
-  /* KILL all legacy absolute-positioning */
   .history-text,
   .tradition-text {
-    position: static !important;
-    transform: none !important;
-    left: auto !important;
-    top: auto !important;
-    width: 100% !important;
+    position: static;
+    transform: none;
+    left: auto;
+    top: auto;
+    width: 100%;
   }
 
    .origami-history {
@@ -741,31 +730,25 @@ html {
   transform: translateX(-50%);
 }
 
-  /* ===========================================
-     CRAFT SECTION — STACKED ON MOBILE
-  ============================================ */
-
   .craft-text {
     display: flex;
-    flex-direction: column !important;
-    gap: 28px !important;
+    flex-direction: column;
+    gap: 28px;
   }
 
   .left-col,
   .right-col {
-    width: 100% !important;
-    max-width: none !important;
-    text-align: left !important;
+    width: 100%;
+    max-width: none;
+    text-align: left;
   }
 
   .fold-types {
-    flex-direction: column !important;
-    gap: 20px !important;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  /* ===========================================
-     MATERIALS — ALWAYS VISIBLE, NO HOVER STATES
-  ============================================ */
+ 
   .material,
   .material img,
   .material-info,
@@ -774,7 +757,7 @@ html {
   }
 
   .material {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 220px;
@@ -801,34 +784,66 @@ html {
 
   .material-info p {
     font-size: 15px;
-    color: rgba(27, 27, 27, 0.6);
+    color: #1b1b1b;
     line-height: 1.5;
   }
 
-  /* ===========================================
-     FOLDING — ALWAYS VISIBLE ON MOBILE
-  ============================================ */
+    .material-info p:hover,
+  .material-info p:active,
+  .material-info p:focus {
+    color: #1b1b1b;
+  }
+
+    .folding-item {
+    cursor: default;
+    transition: none;
+  }
+
   .folding-item img {
-    transform: none !important;
-    filter: none !important;
+    transform: none;
+    filter: none;
+    transition: none;
   }
 
   .folding-info {
-    opacity: 1 !important;
-    transform: none !important;
-    margin-top: 12px !important;
+    opacity: 1;
+    transform: none;
+    margin-top: 12px;
+    transition: none;
   }
 
-  /* ===========================================
-     MODERN REACH — REMOVE FLOWER WALL
-  ============================================ */
+
   .modern-reach {
-    background-image: none !important;
-    justify-content: center !important;
+    background-image: none;
+    justify-content: center;
   }
 
   .reach-content {
-    width: 100% !important;
+    width: 100%;
+  }
+
+    .logo:hover,
+  .nav-links a:hover,
+  .dropdown-menu a:hover,
+  .hero-text .cta a:hover::after,
+  .material:hover img,
+  .material:hover .material-info p,
+  .folding-item:hover img,
+  .folding-item:hover .folding-info,
+  .nav-links a:hover::after,
+  .site-footer a:hover {
+    transform: none;
+    filter: none;
+    color: inherit;
+  }
+
+  .nav-links a:hover::after,
+  .hero-text .cta a:hover::after {
+    width: 0;
+  }
+
+  .site-footer a:hover {
+    border-bottom-color: currentColor;
   }
 }
 
@@ -857,6 +872,6 @@ html {
 
 @media (min-width: 901px) {
   .dropdown-menu {
-    display: none !important;
+    display: none;
   }
 }
