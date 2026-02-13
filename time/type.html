@@ -1,0 +1,60 @@
+<html>
+    <head>
+          <title>Running Out of Time</title>
+        <link rel="stylesheet" href="type.css/styles.css">
+    </head>
+<body>
+
+<div class="horizontal-wrapper">
+
+<section class="panel card-panel">
+  <div class="letter-page">
+    <div class="typed-text"></div>
+    <div class="cursor">|</div>
+  </div>
+</section>
+
+  <!-- PANEL 2 -->
+  <section class="panel mile-panel">
+
+    <!-- rotating rings -->
+    <div class="ring-wrapper">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+    </div>
+
+    <!-- sentence -->
+    <div class="mile-sentence">
+      Nevermind, I hit the snooze on my alarm
+      <span class="twenty-trigger">20</span>
+      times
+    </div>
+
+    <!-- scatter -->
+    <div class="scatter-layer"></div>
+
+  </section>
+
+  <!-- PANEL 3 -->
+  <section class="panel tired-panel">
+    <div class="tired-text">
+      I was just so tired.
+    </div>
+  </section>
+
+  <section class="panel final-panel">
+  <div class="final-text">I JUST RAN OUT OF TIME</div>
+  <div class="final-zero">0000</div>
+</section>
+</div>
+ <audio id="bg-music" src="audio/music.mp3" loop></audio>
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
+    <img src="audio/black-note.png" alt="Music Toggle" id="musicIcon">
+  </button>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrambleTextPlugin.min.js"></script>
+<script src="type.js"></script>
+    </body>
+   </html>

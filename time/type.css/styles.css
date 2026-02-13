@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Cosmico";
+  src: url("Cosmico-Demo.otf");
+}
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+  overflow-x: hidden;
+  font-family: "Cosmico", sans-serif;
+}
+
+.horizontal-wrapper {
+  display: flex;
+  width: max-content;
+}
+
+.panel {
+  min-width: 100vw;
+  height: 100vh;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.card-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter-page {
+  width: 60vw;
+  font-size: 2.5vw;
+  line-height: 1.4;
+  color: black;
+}
+
+.typed-text {
+  display: inline;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 6px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+.mile-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.ring-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+}
+
+.ring span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  color: #1d1d1d;
+}
+
+.ring-1 { animation: spin 25s linear infinite; }
+.ring-2 { animation: spin 40s linear infinite reverse; }
+.ring-3 { animation: spin 60s linear infinite; }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.mile-row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: max-content;      /* THIS is key */
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.mile-sentence {
+  font-size: 2.4vw;
+  color: darkred;
+  z-index: 1;
+}
+
+.twenty-trigger {
+  filter: blur(6px);
+  cursor: pointer;
+  display: inline-block;
+  transition: filter 0.3s ease;
+  margin: 0 0.2em;
+}
+
+.travel-line {
+  height: 3px;
+  width: 0;
+  background: black;
+  transform-origin: left center;
+  flex-shrink: 0;
+}
+
+.scatter-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.number {
+  position: absolute;
+  font-size: 3vw;
+  opacity: 0;
+  font-family: "FunkMachine";
+}
+
+.tired-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tired-text {
+  opacity: 0;
+  font-size: 3vw;
+  color: #111;
+}
+
+.final-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-text {
+  font-size: 15vw;   /* starts BIG */
+  text-align: center;
+  white-space: nowrap;
+}
+
+.final-zero {
+  position: absolute;
+  opacity: 0;
+  font-size: 3vw;
+}
+
+.music-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.music-toggle:hover {
+  transform: scale(1.05);
+}
+
+.music-toggle img {
+  width: 40px;
+  height: auto;
+}
